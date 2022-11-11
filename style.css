@@ -39,8 +39,21 @@ p{
     padding: 40px 80px;
 }
 
-.section-mi{
+.section-m1{
     margin: 40px 0;
+}
+
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background:white;
+    border-radius: 4px;
+    cursor:pointer;
+    border:none;
+    outline:none;
+    transition: 0.2s;
 }
 
 body{
@@ -56,6 +69,10 @@ body{
     padding: 20px 80px;
     background-color: #e3e6f3;
     box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    position:sticky;
+    z-index:99;
+    top:0;
+    left:0;
 }
 
 #navbar {
@@ -92,6 +109,195 @@ body{
     bottom: -4px;
     left: 20px;
     background-color: #088178;
+}
+
+/* Home Page */
+
+#hero{
+    background-image: url('img/hero4.png');
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
 
 }
 
+#hero h4{
+    padding-bottom:15px;
+}
+#hero h1{
+    color:#088178;
+}
+
+#hero button {
+    background-image: url('img/button.png');
+    background-color: transparent;
+    color: #088178;
+    border:none;
+    padding:14px 80px 14px 65px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    background-repeat: no-repeat;
+}
+
+/* feature */
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#feature .fe-box{
+    width:180px;
+    padding: 25px 15px;
+    text-align: center;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+#feature .fe-box img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#feature .fe-box:hover{
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+#feature .fe-box h6 {
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1px;
+    border-radius: 4px;
+    color: #088178;
+    background: #fddde4;
+} 
+
+#feature .fe-box:nth-child(2) h6{
+    background-color: #cdebbc;
+}
+#feature .fe-box:nth-child(3) h6{
+    background-color: #d1e8f2;
+}
+
+
+#feature .fe-box:nth-child(4) h6{
+    background-color: #cdd4f8;
+}
+
+#feature .fe-box:nth-child(5) h6{
+    background-color: #f6bdf6;
+}
+
+#feature .fe-box:nth-child(6) h6{
+    background-color: #fff2e5;
+}
+
+#product1{
+    text-align: center;
+}
+
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#product1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s;
+    position: relative;
+}
+
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product1 .pro .des span{
+    color: #606063;
+    font-size: 12px;
+}
+
+#product1 .pro .des h5{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+
+#product1 .pro .des i{
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+    padding-top: 5px;
+}
+#product1 .pro .des h4{
+    padding-top:7px;
+    font-weight: bold;
+    font-size: 15px;
+    color: #088178;
+}
+
+#product1 .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    color: #088178;
+    border-top: 1px solid #cce7d0;
+    font-weight: bold;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+/* banner section */
+#banner{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background-image: url('img/banner/b2.jpg');
+    background-size: cover;
+    background-position:center ;
+    width:100%;
+    height:40vh;
+}
+
+#banner h4 {
+    font-size: 16px;
+    color: #fff;
+}
+#banner h2 {
+    font-size: 30px;
+    color: #fff;
+    padding: 10px 0;
+}
+#banner h2  span {   
+    color: #ef3636; 
+}
