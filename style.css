@@ -340,7 +340,7 @@ body{
     background-image: url('img/banner/b17.jpg');
     background-size: cover;
     background-position:center;
-    min-width: 540px;
+    min-width: 840px;
     
     height:50vh;
     padding: 30px;
@@ -613,5 +613,18 @@ footer .copyright{
      }
      #banner {
         height: 20vh;
+    }
+    #sm-banner .banner-box {
+        min-width: 100%;
+        height: 30vh;
+    }
+    #banner3 {
+        padding: 0 40px;
+    }
+    #banner3 .banner-box{
+        width: 27%;
+    }
+    #newsletter .form {
+        width: 70%;
     }
 }
