@@ -340,7 +340,7 @@ body{
     background-image: url('img/banner/b17.jpg');
     background-size: cover;
     background-position:center;
-    min-width: 840px;
+    min-width: 540px;
     
     height:50vh;
     padding: 30px;
@@ -528,7 +528,9 @@ footer .copyright{
     width: 100%;
     text-align: center;
 }
-
+#close{
+    display:none;
+}
 
 
 
@@ -538,6 +540,9 @@ footer .copyright{
 /* Media Query */
 
 @media (max-width: 799px) {
+    .section-p1{
+        padding: 40px 40px;
+    }
     #navbar{
         display:flex;
         flex-direction: column;
@@ -568,6 +573,45 @@ footer .copyright{
     #mobile i{
         color: #1a1a1a;
         font-size:24px;
-        padding-left:20px ;
+        padding-left:20px;
+    }
+    
+    #close{
+        display:initial;
+        position: absolute;
+        top:30px;
+        left:30px;
+        font-size: 24px;
+        color: #222;
+    }
+    #lg-bag{
+        display: none;
+    }
+
+    #hero{  
+        background-position: top 30% right 30%;
+        padding: 0 80px;
+        height: 70vh;
+    }
+
+    #feature {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    #feature .fe-box {
+        margin: 15px 15px;
+    }
+
+    #product1 .pro-container {
+        justify-content:center;
+     }
+     #product1 .pro {
+        margin: 15px;
+     }
+     #banner {
+        height: 20vh;
     }
 }
