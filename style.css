@@ -937,6 +937,25 @@ footer .copyright{
         padding: 150px 100px 0 100px;
     }
    
+    /* contact section */
+
+    #form-details {
+     
+        margin: 30px;
+        padding: 40px;
+        border: 1px solid #e1e1e1;
+    }
+
+    #form-details form {
+       
+        width: 50%;
+    }
+    .people{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+    }
 }
 
 @media (max-width: 477px){
@@ -1039,4 +1058,6 @@ footer .copyright{
         height: 100%;
         margin: 30px auto 0 auto;
     }
+
+    /* section contact */
 }
